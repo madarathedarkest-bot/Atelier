@@ -97,8 +97,8 @@ const Sidebar = ({ currentScreen, setScreen }: { currentScreen: Screen; setScree
 );
 
 const TopNav = ({ setScreen }: { setScreen: (s: Screen) => void }) => (
-  <nav className="flex justify-between items-center px-8 py-4 z-50 bg-neutral-950/60 backdrop-blur-xl rounded-[32px] mt-6 mx-auto w-[95%] max-w-7xl sticky top-6 shadow-2xl border border-white/5">
-    <button onClick={() => setScreen('landing')} className="text-2xl font-bold tracking-[0.1em] text-primary cursor-pointer">L'ATELIER</button>
+  <nav className="flex justify-between items-center px-6 md:px-8 py-3 md:py-4 z-50 bg-neutral-950/60 backdrop-blur-xl rounded-2xl md:rounded-[32px] mt-4 md:mt-6 mx-auto w-[92%] md:w-[95%] max-w-7xl sticky top-4 md:top-6 shadow-2xl border border-white/5">
+    <button onClick={() => setScreen('landing')} className="text-xl md:text-2xl font-bold tracking-[0.1em] text-primary cursor-pointer">L'ATELIER</button>
     <div className="hidden md:flex items-center gap-8 tracking-[0.05em] text-sm uppercase font-medium">
       <button onClick={() => setScreen('inventory')} className="text-primary border-b border-primary/30 pb-1 hover:text-primary transition-colors cursor-pointer">Collections</button>
       <button onClick={() => setScreen('bespoke')} className="text-neutral-400 hover:text-primary transition-colors cursor-pointer">Bespoke</button>
@@ -142,7 +142,7 @@ const Footer = () => (
 const LandingScreen = ({ setScreen }: { setScreen: (s: Screen) => void }) => (
   <div className="min-h-screen">
     <TopNav setScreen={setScreen} />
-    <section className="relative h-[110vh] -mt-32 flex items-end overflow-hidden">
+    <section className="relative h-[110vh] -mt-20 md:-mt-32 flex items-end overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
           className="w-full h-full object-cover" 
@@ -151,28 +151,28 @@ const LandingScreen = ({ setScreen }: { setScreen: (s: Screen) => void }) => (
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
       </div>
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-8 pb-32">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-8 pb-20 md:pb-32">
         <motion.div 
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="max-w-3xl bg-neutral-900/60 backdrop-blur-xl p-12 md:p-20 rounded-[3rem] shadow-[0_32px_64px_rgba(0,0,0,0.6)] border border-white/5"
+          className="max-w-3xl bg-neutral-900/60 backdrop-blur-xl p-8 md:p-20 rounded-[2rem] md:rounded-[3rem] shadow-[0_32px_64px_rgba(0,0,0,0.6)] border border-white/5"
         >
-          <span className="inline-block text-primary tracking-[0.4em] uppercase text-xs mb-6 font-bold">The Digital Vault</span>
-          <h1 className="text-5xl md:text-8xl font-extrabold leading-[1.1] mb-8 tracking-tight">
+          <span className="inline-block text-primary tracking-[0.4em] uppercase text-[10px] md:text-xs mb-4 md:mb-6 font-bold">The Digital Vault</span>
+          <h1 className="text-4xl md:text-8xl font-extrabold leading-[1.1] mb-6 md:mb-8 tracking-tight">
             The Art of <span className="text-primary text-glow">Precision.</span>
           </h1>
-          <p className="text-on-surface-variant text-lg md:text-xl mb-12 max-w-xl leading-relaxed">
+          <p className="text-on-surface-variant text-base md:text-xl mb-8 md:mb-12 max-w-xl leading-relaxed">
             Crafting the intersection of mechanical excellence and timeless aesthetic. Welcome to the exclusive archive of horological masterpieces.
           </p>
-          <div className="flex flex-wrap gap-6">
+          <div className="flex flex-wrap gap-4 md:gap-6">
             <button 
               onClick={() => setScreen('inventory')}
-              className="bg-neutral-900/80 border border-primary/50 text-primary font-bold px-10 py-5 rounded-xl text-sm uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all shadow-lg shadow-primary/20 cursor-pointer text-glow"
+              className="w-full sm:w-auto bg-neutral-900/80 border border-primary/50 text-primary font-bold px-8 md:px-10 py-4 md:py-5 rounded-xl text-xs md:text-sm uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all shadow-lg shadow-primary/20 cursor-pointer text-glow"
             >
               Explore Vault
             </button>
-            <button className="bg-surface-container-highest/40 backdrop-blur-xl text-on-surface font-bold px-10 py-5 rounded-xl text-sm uppercase tracking-widest hover:bg-surface-container-highest transition-all cursor-pointer">
+            <button className="w-full sm:w-auto bg-surface-container-highest/40 backdrop-blur-xl text-on-surface font-bold px-8 md:px-10 py-4 md:py-5 rounded-xl text-xs md:text-sm uppercase tracking-widest hover:bg-surface-container-highest transition-all cursor-pointer">
               Our Story
             </button>
           </div>
