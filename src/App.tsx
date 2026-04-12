@@ -1,8 +1,3 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
@@ -132,7 +127,7 @@ const Footer = () => (
       <Mail className="text-neutral-600 hover:text-primary cursor-pointer transition-colors" size={20} />
     </div>
     <div className="pt-12 border-t border-outline-variant/10 w-full max-w-4xl text-center">
-      <p className="text-[10px] tracking-widest text-neutral-700 uppercase">© 2024 L'ATELIER HORLOGERIE. ALL RIGHTS RESERVED.</p>
+      <p className="text-[10px] tracking-widest text-neutral-700 uppercase">© 2026 L'ATELIER HORLOGERIE. ALL RIGHTS RESERVED.</p>
     </div>
   </footer>
 );
@@ -276,7 +271,7 @@ const DashboardScreen = ({ setScreen }: { setScreen: (s: Screen) => void }) => {
       <header className="flex justify-between items-end mb-12">
         <div>
           <h2 className="text-4xl font-extrabold tracking-tight text-on-surface mb-2">Horology Control Centre</h2>
-          <p className="text-on-surface-variant/70 tracking-widest uppercase text-xs">Administrative Overview • March 2024</p>
+          <p className="text-on-surface-variant/70 tracking-widest uppercase text-xs">Administrative Overview • March 2026</p>
         </div>
         <div className="glass-card px-6 py-3 rounded-2xl flex items-center gap-3">
           <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
@@ -676,7 +671,7 @@ const DetailScreen = ({ setScreen }: { setScreen: (s: Screen) => void }) => {
                   <div className="h-[1px] w-12 bg-primary/30"></div>
                 </div>
                 <h1 className="text-5xl font-extrabold tracking-tight text-primary leading-tight mb-2">The Nocturne Chronograph</h1>
-                <p className="text-on-surface-variant font-light tracking-wide text-lg">Masterpiece Ref. 2024-N-01</p>
+                <p className="text-on-surface-variant font-light tracking-wide text-lg">Masterpiece Ref. 2026-N-01</p>
               </div>
               <div className="mb-10">
                 <p className="text-4xl font-bold text-primary tracking-tighter">CHF 145,000</p>

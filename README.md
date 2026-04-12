@@ -1,20 +1,71 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# L'ATELIER - The Digital Vault
 
-# Run and deploy your AI Studio app
+An exclusive, high-fidelity horology control centre and digital vault for prestigious timepieces.
 
-This contains everything you need to run your app locally.
+![L'ATELIER](https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=1200&h=400&fit=crop)
 
-View your app in AI Studio: https://ai.studio/apps/113ac80c-bf3a-4fe2-a04d-b8a775384430
+## Features
 
-## Run Locally
+- **Vault Inventory** - Browse and manage a curated collection of luxury timepieces
+- **Analytics Dashboard** - Real-time market valuation trends and portfolio insights
+- **Client Management** - Track collector relationships and acquisitions
+- **Bespoke Projects** - Manage custom watch commissions
 
-**Prerequisites:**  Node.js
+## Tech Stack
 
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Recharts
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or pnpm
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/atelier.git
+cd atelier
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+The app will be available at `http://localhost:3000`
+
+### Build for Production
+
+```bash
+npm run build
+npm run preview
+```
+
+## Project Structure
+
+```
+atelier/
+├── src/
+│   ├── App.tsx          # Main application with all screens
+│   ├── main.tsx         # React entry point
+│   ├── index.css        # Global styles and Tailwind config
+│   ├── types.ts         # TypeScript types and mock data
+│   └── lib/
+│       └── utils.ts     # Utility functions
+├── index.html           # HTML entry point
+├── vite.config.ts       # Vite configuration
+└── tsconfig.json        # TypeScript configuration
+```
+
+## License
+
+&copy; 2026 L'ATELIER HORLOGERIE. All rights reserved.
